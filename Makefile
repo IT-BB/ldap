@@ -10,7 +10,7 @@ ldapAPI.o : ldapInfoAPI.cpp ldapInfoAPI.h ldapException.hpp
 interface.o : ldapInfoAPI.h
 	$(CC) $(CFLAGS) -c  interface.cpp -o interface.o 
 ldapTrace.o : ldapInfoTrace.cpp ldapInfoTrace.h
-	$(CC) $(CFLAGS) -c  ldapInfoTrace.cpp -o ldapTrace.so
+	$(CC) $(CFLAGS) -c  ldapInfoTrace.cpp -o ldapTrace.o
         
 clean:
 	rm -f *.o libldapInfoAPI.so
