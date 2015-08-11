@@ -9,8 +9,8 @@ ldapAPI.o : ldapInfoAPI.cpp ldapInfoAPI.h ldapException.hpp
 	$(CC) $(CFLAGS) -c  ldapInfoAPI.cpp -o ldapAPI.o
 interface.o : ldapInfoAPI.h
 	$(CC) $(CFLAGS) -c  interface.cpp -o interface.o 
-ldapTrace.o : ldapInfoTrace.cpp ldapInfoTrace.hpp
-	$(CC) $(CFLAGS) -c  ldapInfoTrace.cpp ldapTrace.so
+ldapTrace.o : ldapInfoTrace.cpp ldapInfoTrace.h
+	$(CC) $(CFLAGS) -c  ldapInfoTrace.cpp -o ldapTrace.so
         
 clean:
 	rm -f *.o libldapInfoAPI.so

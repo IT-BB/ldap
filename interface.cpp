@@ -152,7 +152,7 @@ extern "C" {
 	}
 	//15. 更新组内成员角色
 	//@json_GroupUserRole {"group_id":1,"user_id":10,"Role":1}  
-	int updateGroupUserRole(in *json_GroupUserRole){
+	int updateGroupUserRole(in char *json_GroupUserRole){
 		
 	}
 	//16. 删除组内成员
